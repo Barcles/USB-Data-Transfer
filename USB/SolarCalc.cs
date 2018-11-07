@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -36,15 +36,15 @@ namespace serialPortUWPv2
             double dBatCurrent = ShuntVoltage / ResistorValue;
             return dBatCurrent.ToString("0.000000");
         }
-        
+
         public string GetLEDcurrent(int LEDAnalog, int an1)
         {
             int ShuntAnalog = an1 - LEDAnalog;
             double ShuntVoltage = ShuntAnalog * Vref / 1024.0;
-            double dLEDcurrent = ShuntVoltage / ResistorValue; 
+            double dLEDcurrent = ShuntVoltage / ResistorValue;
             if (dLEDcurrent < 0.0001)
             {
-                dLEDcurrent = 0; 
+                dLEDcurrent = 0;
             }
             return dLEDcurrent.ToString("0.000000");
         }

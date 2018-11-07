@@ -99,12 +99,12 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SolarCalc.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <PackageLayout Include="SolarCalc.packagelayout" />
     <None Include="USB_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
